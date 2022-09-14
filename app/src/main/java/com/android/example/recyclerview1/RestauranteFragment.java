@@ -1,4 +1,4 @@
-package com.android.example.recyclerview;
+package com.android.example.recyclerview1;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,19 +12,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.example.recyclerview.placeholder.PlaceholderContent;
+import com.android.example.recyclerview1.placeholder.PlaceholderContent;
 
 /**
  * A fragment representing a list of Items.
  */
 public class RestauranteFragment extends Fragment {
     RecyclerView recyclerView;
-
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
     private int mColumnCount = 1;
-    private OnListFragmentInteractionListener mListener;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the

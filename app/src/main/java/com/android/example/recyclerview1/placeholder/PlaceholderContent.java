@@ -1,4 +1,4 @@
-package com.android.example.recyclerview.placeholder;
+package com.android.example.recyclerview1.placeholder;
 
 import java.util.ArrayList;
 import java.util.HashMap;

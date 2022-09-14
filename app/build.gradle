@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.android.example.recyclerview"
+        applicationId "com.android.example.recyclerview1"
         minSdk 21
         targetSdk 32
         versionCode 1

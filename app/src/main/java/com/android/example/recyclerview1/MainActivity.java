@@ -1,10 +1,10 @@
-package com.android.example.recyclerview;
+package com.android.example.recyclerview1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements OnListFragmentInteractionListener{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

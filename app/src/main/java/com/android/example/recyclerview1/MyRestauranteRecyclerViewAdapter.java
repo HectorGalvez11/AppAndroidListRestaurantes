@@ -1,4 +1,4 @@
-package com.android.example.recyclerview;
+package com.android.example.recyclerview1;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.android.example.recyclerview.placeholder.PlaceholderContent.PlaceholderItem;
-import com.android.example.recyclerview.databinding.FragmentItemBinding;
+import com.android.example.recyclerview1.placeholder.PlaceholderContent.PlaceholderItem;
+import com.android.example.recyclerview1.databinding.FragmentItemBinding;
 
 import java.util.List;
 
