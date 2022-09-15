@@ -13,14 +13,14 @@ import com.android.example.recyclerview1.databinding.FragmentItemBinding;
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
+ * {@link RecyclerView.Adapter} that can display a {@link Restaurante}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyRestauranteRecyclerViewAdapter extends RecyclerView.Adapter<MyRestauranteRecyclerViewAdapter.ViewHolder> {
 
-    private final List<PlaceholderItem> mValues;
+    private final List<Restaurante> mValues;
 
-    public MyRestauranteRecyclerViewAdapter(List<PlaceholderItem> items) {
+    public MyRestauranteRecyclerViewAdapter(List<Restaurante> items) {
         mValues = items;
     }
 
@@ -46,7 +46,7 @@ public class MyRestauranteRecyclerViewAdapter extends RecyclerView.Adapter<MyRes
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final TextView mIdView;
         public final TextView mContentView;
-        public PlaceholderItem mItem;
+        public Restaurante mItem;
 
         public ViewHolder(FragmentItemBinding binding) {
             super(binding.getRoot());

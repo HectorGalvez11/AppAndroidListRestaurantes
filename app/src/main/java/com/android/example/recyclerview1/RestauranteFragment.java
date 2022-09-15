@@ -12,13 +12,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.example.recyclerview1.placeholder.PlaceholderContent;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A fragment representing a list of Items.
  */
 public class RestauranteFragment extends Fragment {
     RecyclerView recyclerView;
+    MyRestauranteRecyclerViewAdapter adapterRestaurantes;
+    List<Restaurante> restauranteList;
+
     // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
     // TODO: Customize parameters
@@ -64,7 +70,16 @@ public class RestauranteFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyRestauranteRecyclerViewAdapter(PlaceholderContent.ITEMS));
+
+            //Listado de elementos (Restaurantes)
+            restauranteList = new ArrayList<>();
+            restauranteList.add(new Restaurante("Burger King", "", 5f, "Guatemala"));
+            restauranteList.add(new Restaurante("Pizzeria Little Caesers", "", 4f, "Jalapa"));
+            restauranteList.add(new Restaurante("SubWay", "", 4.0f, "Chiquimula"));
+
+            //Asociamos el adaptador al RecyclerView
+            adapterRestaurantes = new MyRestauranteRecyclerViewAdapter(restauranteList);
+            recyclerView.setAdapter(adapterRestaurantes);
         }
         return view;
     }
