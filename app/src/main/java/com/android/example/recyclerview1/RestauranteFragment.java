@@ -73,12 +73,12 @@ public class RestauranteFragment extends Fragment {
 
             //Listado de elementos (Restaurantes)
             restauranteList = new ArrayList<>();
-            restauranteList.add(new Restaurante("Burger King", "", 5f, "Guatemala"));
-            restauranteList.add(new Restaurante("Pizzeria Little Caesers", "", 4f, "Jalapa"));
-            restauranteList.add(new Restaurante("SubWay", "", 4.0f, "Chiquimula"));
+            restauranteList.add(new Restaurante("Burger King", "https://assets.entrepreneur.com/content/3x2/2000/1645822504-GettyImages-1370781946.jpg?crop=4:3", 5f, "Guatemala"));
+            restauranteList.add(new Restaurante("Pizzeria Little Caesers", "https://fastly.4sqi.net/img/general/600x600/132835016_SaqjEI_sp7WcjCiVQQetL3RQsCipHjEoPCrdw4rb7Us.jpg", 4f, "Jalapa"));
+            restauranteList.add(new Restaurante("SubWay", "https://media-cdn.tripadvisor.com/media/photo-s/1b/5d/52/c1/stoer-front.jpg", 4.0f, "Chiquimula"));
 
             //Asociamos el adaptador al RecyclerView
-            adapterRestaurantes = new MyRestauranteRecyclerViewAdapter(restauranteList);
+            adapterRestaurantes = new MyRestauranteRecyclerViewAdapter(getActivity(),restauranteList);
             recyclerView.setAdapter(adapterRestaurantes);
         }
         return view;
